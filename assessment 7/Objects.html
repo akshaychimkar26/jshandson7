@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+        <h1><u>7)Objects</u></h1></br>
+        <p><h1>i)Create a Function</h1></br>Complete the function in the editor. In which you are given one object as a parameter, in that object, there is a data member named name. Your task is to create a method inside this object named setter, such that this method will print the value of the data member named as name.</p>
+        <p><h1>Input Format</h1></br>The input will contain one name only, which denotes the only data member of the object.</p>
+        <p><h1>Output Format</h1></br>Your task is to create a method inside this object named as setter such that this method will print the value of the data member named as a name.</p>
+        <p><h1>Example</h1></br>Sample Input</br>Utkarsh</br>Sample Output</br>Utkarsh</p>
+        <p>CODE</p>
+        <p>function Check(obj1){</br>obj1.setter=function(){</br>console.log(this.name);</br>}</br>}</p>
+        <p>OUTPUT</p>
+        <p>Input</br>Utkarsh</br>Output</br>Utkarsh</p><hr>
+
+        <p><h1>ii)Delete a Parameter</h1></br>Complete the function in the editor. You have an object as a parameter. In which you have to delete the rollno property from the object and return the object.</p>
+        <p><h1>Input Format</h1></br>You have to give two inputs one name and the second as rollno separated by new line.</p>
+        <p><h1>Output Format</h1></br>If you have deleted the rollno property in the object then the code will print "True" otherwise "False".</p>
+        <p><h1>Example</h1></br>Sample Input</br>Utkarsh</br>129</br>Sample Output</br>True</p>
+        <p>CODE</p>
+        <p>function Check(obj1){</br>delete obj1.rollno;</br>return obj1;</br>}</p>
+        <p>OUTPUT</p>
+        <p>Input</br>Utkarsh</br>129</br>Output</br>True</p><hr>
+
+        <p><h1>iii)Check whether the Package is Dream Package or not</h1></br>Complete the function in the editor. In which you are given an object as a parameter.</br>In that object, there is one property named as salary if the salary is maximum than 5 lakh then return "Dream" otherwise  return "NotDream".</p>
+        <p><h1>Input Format</h1></br>The first Line contains 1 package of a student.</p>
+        <p><h1>Output Format</h1></br>If the salary is a maximum of 5 lakh then return "Dream" otherwise return "NotDream".</p>
+        <p><h1>Example</h1></br>Sample Input</br>100000</br>Sample Output</br>NotDream</p>
+        <p>CODE</p>
+        <p>function Check(obj1){</br>if(obj1.salary>=500000){</br>return "Dream"</br>}</br>else{</br>return "NotDream"</br>}</br>}</p>
+        <p>OUTPUT</p>
+        <p>Input</br>100000</br>Output</br>NotDream</p><hr>
+
+        <p><h1>iv)Check whether the Object has a parameter or not</h1></br>Complete the function in the editor. In which you are given an object as a parameter. You have to return "false" if there is no parameter in the object otherwise return "true".</p>
+        <p><h1>Input Format</h1></br>0 as a means no variable in an object and 1 means there are variables in an object.</p>
+        <p><h1>Output Format</h1></br>Return "false" if there is no parameter in the object otherwise return "true".</p>
+        <p><h1>Example</h1></br>Sample Input</br>1</br>Sample Output</br>true</p>
+        <p>CODE</p>
+        <p>function Check(obj1){</br>let hasKeys = !!Object.keys(obj1).length;</br>return hasKeys;</br>}</p>
+        <p>OUTPUT</p>
+        <p>Input</br>1</br>Output</br>true</p><hr>
+
+        <p><h1>v)Merge the Objects</h1></br>Complete the function in the editor. In which you are given two objects as a parameter.In which you have to merge two objects and return a single object.</p>
+        <p><h1>Input Format</h1></br>The input consists of four lines,</br>In which first lines contains two data members of first object which are defined as name and id. And the next two lines contains two data members for the second object which are defined as state and code.</p>
+        <p><h1>Output Format</h1></br>Just complete the function.</p>
+        <p><h1>Example</h1></br>Sample Input</br>Utkarsh </br>129</br>Haryana</br>121009</br>Sample Output</br>Utkarsh</br>129</br>Haryana</br>121009</p>
+        <p>CODE</p>
+        <p>function Check(obj1,obj2){</br>let obj3=Object.assign(obj1,obj2);</br>return obj3;</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>Utkarsh </br>129</br>Haryana</br>121009</br>Output</br>Utkarsh</br>129</br>Haryana</br>121009</p><hr>
+
+        <p><h1>vi)Object Multiplyer</h1></br>Complete the function in the editor. In which you are given an object and a digit N as a parameter.In the object there are two variable id and houseno are defined as a data member. You have to multiply both the data members with a given digit N.</p>
+        <p><h1>Input Format</h1></br>There are three line in input, where the first one contains N,</br>And the next two lines contains the first data member i.e. id and second data member i.e. houseno.</p>
+        <p><h1>Output Format</h1></br>Just complete the function, No need to print anything.</p>
+        <p><h1>Example</h1></br>Sample Input</br>2</br>12</br>146</br>Sample Output</br>24</br>292</p>
+        <p>CODE</p>
+        <p>function Check(a,obj1){</br>obj1.id*=a;</br>obj1.houseno*=a;</br>return obj1;</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>2</br>12</br>146</br>Output</br>24</br>292</p><hr>
+
+        <p><h1>vii)Find the  sum of Object Members</h1></br>You are given a function Check which takes an object Obj as a parameter.</br>Your taks is to find out the sum of the three data members of the object. The data members are named as p1, p2, p3.</br><b>Note</b>: You have to complete <b>Check function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains three number p1,p2 and p3, which represents the data members of the object.</p>
+        <p><h1>Output Format</h1></br>Return the sum of all members of the given object.</p>
+        <p><h1>Constraints</h1>1 ≤ p1,p2,p3 ≤ 1000</p>
+        <p><h1>Time Limit</h1>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>1</br>2</br>3</br>Sample Output</br>6</p>
+        <p>CODE</p>
+        <p>function Check(obj1){</br>return obj1.p1+obj1.p2+obj1.p3;</br>}</p>
+        <p>OUTPUT</p>
+        <p>Input</br>1</br>2</br>3</br>Output</br>6</p><hr>
+
+        <p><h1>viii)Check whether the Objects are same or not.</h1></br>Complete the function in the editor. In which you are given an object as a parameter. That object contains two variables name and id.</br>Your task is to compare the object name and id to the new_name and new_id given there as a parameter.</br>Return "true" if new_name and id are same as objects name and id otherwise return  "false".</p>
+        <p><h1>Input Format</h1></br>The first line contains one name and one id separated by new line.</br>The second line contains new_name and new_id separated by new line.</p>
+        <p><h1>Output Format</h1></br>Return "true" if both objects are same else return "false".</p>
+        <p><h1>Example</h1></br>Sample Input</br>Utkarsh </br>2 </br>Prepbytes </br>3</br>Sample Output</br>false</p>
+        <p>CODE</p>
+        <p>function Check(obj1,a,b){</br>if(obj1.name===a && obj1.id===b){</br>return "true";</br>}</br>else{</br>return "false";</br>}</br>}</p>
+        <p>OUTPUT</p>
+        <p>Input</br>Utkarsh </br>2 </br>Prepbytes </br>3</br>Output</br>false</p><hr>
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+    </html>
